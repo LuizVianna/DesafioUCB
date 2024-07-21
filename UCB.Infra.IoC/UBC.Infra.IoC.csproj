@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UCB.Application\UCB.Application.csproj" />
-    <ProjectReference Include="..\UCB.Domain\UCB.Domain.csproj" />
-    <ProjectReference Include="..\UCB.Infra.Data\UCB.Infra.Data.csproj" />
+    <ProjectReference Include="..\UCB.Application\UBC.Application.csproj" />
+    <ProjectReference Include="..\UCB.Domain\UBC.Domain.csproj" />
+    <ProjectReference Include="..\UCB.Infra.Data\UBC.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

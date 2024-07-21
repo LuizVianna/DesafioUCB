@@ -1,6 +1,6 @@
-﻿using UCB.Domain.Entities;
+﻿using UBC.Domain.Entities;
 
-namespace UCB.Domain.Interfaces
+namespace UBC.Domain.Interfaces
 {
     public interface IUserRepository
     {
@@ -9,5 +9,6 @@ namespace UCB.Domain.Interfaces
         Task<User> Incluir(User user);
         Task<User> Alterar(User user);
         Task<User> Excluir(int id);
+        User ObterPorUserName(string userName);
     }
 }

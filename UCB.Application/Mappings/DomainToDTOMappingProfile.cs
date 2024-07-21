@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using UCB.Application.DTOs;
-using UCB.Domain.Entities;
+using UBC.Application.DTOs;
+using UBC.Domain.Entities;
 
 
-namespace UCB.Application.Mappings
+namespace UBC.Application.Mappings
 {
     public class DomainToDTOMappingProfile: Profile
     {

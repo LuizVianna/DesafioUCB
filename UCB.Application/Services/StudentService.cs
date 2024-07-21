@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using UCB.Application.DTOs;
-using UCB.Application.Interfaces;
-using UCB.Domain.Entities;
+using UBC.Application.DTOs;
+using UBC.Application.Interfaces;
+using UBC.Domain.Entities;
 using UCB.Domain.Interfaces;
 
 namespace UCB.Application.Services

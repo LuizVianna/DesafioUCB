@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UCB.Domain.Entities;
+using UBC.Domain.Entities;
+using UBC.Infra.Data.Context;
 using UCB.Domain.Interfaces;
-using UCB.Infra.Data.Context;
 
 namespace UCB.Infra.Data.Respositories
 {

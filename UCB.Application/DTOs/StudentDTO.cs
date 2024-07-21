@@ -1,4 +1,4 @@
-﻿namespace UCB.Application.DTOs
+﻿namespace UBC.Application.DTOs
 {
     public class StudentDTO
     {

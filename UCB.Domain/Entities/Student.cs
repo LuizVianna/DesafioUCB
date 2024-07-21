@@ -1,6 +1,6 @@
 ﻿using UCB.Domain.Validations;
 
-namespace UCB.Domain.Entities
+namespace UBC.Domain.Entities
 {
     public class Student
     {

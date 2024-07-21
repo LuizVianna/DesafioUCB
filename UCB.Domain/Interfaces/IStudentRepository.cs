@@ -1,4 +1,4 @@
-﻿using UCB.Domain.Entities;
+﻿using UBC.Domain.Entities;
 
 namespace UCB.Domain.Interfaces
 {

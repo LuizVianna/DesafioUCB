@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UCB.Domain.Entities;
-using UCB.Domain.Interfaces;
-using UCB.Infra.Data.Context;
+using UBC.Domain.Entities;
+using UBC.Domain.Interfaces;
+using UBC.Infra.Data.Context;
 
-namespace UCB.Infra.Data.Respositories
+
+
+namespace UBC.Infra.Data.Respositories
 {
     public class UserRepository : IUserRepository
     {
@@ -49,6 +51,13 @@ namespace UCB.Infra.Data.Respositories
         public async Task<IEnumerable<User>> SelecionarTodosAsync()
         {
             return await _context.Users.ToListAsync();
+        }
+
+        public User ObterPorUserName(string userName)
+        {
+            return _context.Users
+                                 .AsNoTracking()
+                                 .FirstOrDefault(x => x.UserName == userName);
         }
     }
 }

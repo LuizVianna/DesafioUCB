@@ -1,7 +1,7 @@
-﻿using UCB.Application.DTOs;
-using UCB.Domain.Entities;
+﻿using UBC.Application.DTOs;
 
-namespace UCB.Application.Interfaces
+
+namespace UBC.Application.Interfaces
 {
     public interface IStudentService
     {

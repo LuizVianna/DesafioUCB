@@ -1,12 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UCB.Domain.Entities;
+using UBC.Domain.Entities;
 
-namespace UCB.Infra.Data.Context
+
+namespace UBC.Infra.Data.Context
 {
     public class ApplicationDbContext : DbContext
     {
