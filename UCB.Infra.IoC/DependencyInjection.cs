@@ -21,9 +21,10 @@ namespace UCB.Infra.IoC
     {
         public static IServiceCollection AddInfraStructure(this IServiceCollection service, IConfiguration configuration)
         {
-            service.AddDbContext<ApplicationDbContext>(opt =>
+            service.AddDbContext<ApplicationDbContext>(options =>
             {
-                opt.UseInMemoryDatabase("ucbdb");
+                options.UseSqlServer(configuration.GetConnectionString("DBConnection"),
+                    b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
             });
 
             //service.AddAuthentication(
