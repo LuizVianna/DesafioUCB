@@ -1,10 +1,9 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Text;
 using UCB.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors();
+
 
 // Add services to the container.
 
@@ -59,6 +58,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
+app.UseCors(opt => {
+    opt.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+});
 
 app.UseAuthentication();
 app.UseAuthorization();

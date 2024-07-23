@@ -16,7 +16,7 @@ namespace UCB.Api.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login(LoginDTO loginDTO)
+        public IActionResult Login([FromBody]LoginDTO loginDTO)
         {
             if (loginDTO == null) return BadRequest("Email e/ou senha inválido!");
 
