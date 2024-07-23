@@ -29,7 +29,7 @@ namespace UCB.Api.Controllers
         [HttpPost("add-student")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<StudentDTO>> Incluir(StudentDTO studentDto)
+        public async Task<ActionResult<StudentDTO>> Incluir([FromBody] StudentDTO studentDto)
         {
             if (string.IsNullOrEmpty(studentDto.Nome)
                 || string.IsNullOrEmpty(studentDto.NomeMae))
@@ -55,10 +55,10 @@ namespace UCB.Api.Controllers
         }
 
 
-        [HttpPut("update-student")]
+        [HttpPut("update-student/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<object>> Atualizar(StudentDTO dto)
+        public async Task<ActionResult<StudentDTO>> Atualizar([FromBody] StudentDTO dto)
         {
             if (dto == null) return BadRequest("O student não pode ser null!");
             return await _studentService.Alterar(dto);
