@@ -66,7 +66,7 @@ namespace UCB.Api.Controllers
 
 
 
-        [HttpGet("select-student")]
+        [HttpGet("select-student/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> SelecionarPorId(int id)
