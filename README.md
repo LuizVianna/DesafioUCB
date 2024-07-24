@@ -7,7 +7,7 @@ Este projeto tem o objetivo de atender o desafio da empresa UBC - União Brasile
      1.3. Validations
   2. Camada UBC.Infra.Data (camada de acesso a dados)
      2.1. Context -- No contexto foi colocado no método sobreescrito a capacidade de inserir a dados iniciais, tanto na tabela de User, e alguns registros na tabela de students.
-     2.2. Migrations (Inicialmente foi solicitado que deveria ser realizada a persistencia de dados em menória, mas não consegui fazer em tempo hábil então, procurei fazer da forma que conheço e investir tempo no frontend que também não sabia fazer
+     2.2. Migrations (Inicialmente foi solicitado que deveria ser realizada a persistencia de dados em menória, mas não consegui fazer em tempo hábil então, procurei fazer da forma que conheço no SqlServerExpress e investir tempo no frontend que também não sabia fazer
      2.3. Repository 
 3. Camada UBC.Application
    3.1. DTOs
