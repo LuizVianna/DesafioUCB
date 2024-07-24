@@ -40,7 +40,7 @@ namespace UCB.Api.Controllers
             return Ok("Student incluso com sucesso!");
         }
 
-        [HttpDelete("delete-student")]
+        [HttpDelete("delete-student/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> Excluir(int id)
